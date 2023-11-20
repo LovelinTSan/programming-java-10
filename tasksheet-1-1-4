@@ -1,1 +1,32 @@
+/*
+Task Sheet-1-1-4
+Write a program that takes in the score of a student in a test and outputs their grade based on the following criteria:
+A score of 90 to 100 gets an A grade
+A score between 80 to 89 gets a B grade
+A score between 70 to 79 gets a C grade
+A score between 60 to 69 gets a D grade
+A score below 60 gets an F grade
+*/
+
+
+import java.util.Scanner;
+public class StudentGrade {
+    public static void main (String [] args)
+    {
+        Scanner studentScore = new Scanner (System.in);
+        System.out.println("Your score is: ");
+        int yourScore = studentScore.nextInt();
+
+        if(yourScore >90 && yourScore<=100 )
+            System.out.println("A grade");
+        else if(yourScore>80 && yourScore<=89 )
+            System.out.println("B grade");
+        else if(yourScore>70 && yourScore<=79 )
+            System.out.println("C grade");
+        else if(yourScore>60 && yourScore<=69 )
+            System.out.println("D grade");
+        else
+            System.out.println("F grade");
+    }
+}
 
