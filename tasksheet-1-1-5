@@ -1,0 +1,31 @@
+//Task Sheet 1-1-5
+
+import java.util.Scanner;
+public class TaskSheet_1_1_5
+{
+    public static void main(String[] args) {
+      Scanner input1 = new Scanner(System.in);
+            System.out.println("enter a word: ");
+            StringBuilder word = new StringBuilder(input1.nextLine());
+
+            StringBuilder reverseword = new StringBuilder(word).reverse();
+
+                if(word.equals(reverseword.toString()))
+                    System.out.println("yehey the word is equal if reversed.");
+                else
+                    System.out.println("the word is not equal if reversed.");
+
+                if(word.toString().equals(word.reverse().toString()))
+                    System.out.println("The input string is a palindrome.");
+                else
+                    System.out.println("The input string is not a palindrome.");
+        }
+}
+
+
+// Write a program that takes a string as input and checks if it is a palindrome. A palindrome is a word, number, or other sequence of characters that reads the same forward and backward.
+// Your program should perform the following steps:
+// Use StringBuilder to create a new string that is a reverse of the input string.
+// Use the equals() method to check if the input string and the reversed string are the same.
+// If the strings are the same, print "The input string is a palindrome."
+// If the strings are not the same, print "The input string is not a palindrome."
