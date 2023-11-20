@@ -1,1 +1,53 @@
+public class ArithmeticTask {
+
+    public static void main (String [] args)
+    {
+        int a = 16, b = 2, c = 1;
+
+            System.out.println("Given 3 variable a, b, c");
+            System.out.println("where a = 16, b = 2, and c = 1");
+            System.out.println("Perform different arithmetic using +, -, /, *");
+
+        int sum = a + b + c; // using + sign
+            System.out.println("a + b + c = " +sum);
+
+        int difference = a - b - c; // using - sign
+            System.out.println("a - b - c = " +difference);
+
+        int product = a * b * c; // using * sign
+            System.out.println("a * b * c = " +product);
+
+        int quotient = (a+b)/c; //using / sign
+            System.out.println("(a+b)/c = " +quotient);
+            System.out.println(" ");
+
+        // Using compound assignments
+        System.out.println("Let us try using compound assignments.");
+        System.out.println(" ");
+
+        sum += 20;
+        System.out.println("sum += 20: " +sum); //Increments then assigns
+
+        product *= 20;
+            System.out.println("product *= 20: " +product); //Multiplies then assigns
+
+        quotient /= 20;
+            System.out.println("quotient /= 20: " +quotient); //Divides then assigns
+
+        int modulus = (a+b+c) % 7;
+        modulus %= 5;
+            System.out.println("modulus = (a+b+c) % 7: " +modulus);
+            System.out.println("modulus %= 5: "+modulus);//Modulus then assigns
+
+        sum <<= 5;
+            System.out.println("Sum <<= 5" + sum); //Binary Left Shift  and assigns
+
+        sum >>= 3;
+            System.out.println("Sum >>= 3" + sum); //Binary Right Shift and assigns
+
+        difference &= 1;
+        System.out.println("difference &= 5" + difference); //Binary AND assigns
+
+    }
+}
 
