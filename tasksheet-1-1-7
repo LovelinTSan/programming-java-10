@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class task117 {
+           public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print("Enter first number: ");
+            double num1 = scanner.nextDouble();
+
+            System.out.print("Enter second number: ");
+            double num2 = scanner.nextDouble();
+
+            System.out.println("Addition: " + Addition(num1, num2));
+            System.out.println("Subtraction: " + Subtraction(num1, num2));
+            System.out.println("Multiplication: " + Multiplication(num1, num2));
+            System.out.println("Division: " + Division (num1, num2));
+
+            scanner.close();
+        }
+
+        public static double Addition (double a, double b) {
+            return a + b;
+        }
+
+        public static double Subtraction (double a, double b) {
+            return a - b;
+        }
+        public static double Multiplication (double a, double b) {
+            return a * b;
+        }
+        public static double Division (double a, double b) {
+            if (b != 0) {
+                return a / b;
+            } else {
+                System.out.println("Cannot divide by zero");
+                return Double.NaN; // NaN represents "Not a Number"
+            }
+        }
+    }
