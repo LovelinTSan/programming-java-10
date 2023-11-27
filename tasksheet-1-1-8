@@ -1,0 +1,25 @@
+public class task118 {
+    public static void main(String[] args) {
+            calculateCumulativeSum(1, 2, 10);
+        }
+        public static void calculateCumulativeSum(int... numbers) {
+            int totalSum = 0;
+            int cumulativeSum = 0;
+
+            for (int i = 0; i < numbers.length; i++) {
+                cumulativeSum = 0;
+
+                for (int j = 1; j <= numbers[i]; j++) {
+                    cumulativeSum += j;
+                }
+
+                totalSum += cumulativeSum;
+
+                System.out.println(numbers[i] + " = " + cumulativeSum);
+            }
+
+            System.out.println("Total Sum: " + totalSum);
+        }
+    }
+
+
